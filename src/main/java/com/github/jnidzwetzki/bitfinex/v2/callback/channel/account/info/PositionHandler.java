@@ -47,6 +47,7 @@ public class PositionHandler implements ChannelCallbackHandler {
     public PositionHandler(int channelId, final BitfinexAccountSymbol symbol) {
         this.channelId = channelId;
         this.symbol = symbol;
+        BitfinexCurrencyPair.registerDefaults();
     }
 
     /**
