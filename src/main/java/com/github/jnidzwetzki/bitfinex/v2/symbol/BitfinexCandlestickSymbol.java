@@ -66,7 +66,7 @@ public class BitfinexCandlestickSymbol implements BitfinexStreamSymbol {
 		
 		final String[] splitString = symbol.split(":");
 
-		if(splitString.length != 3) {
+		if(splitString.length != 5) {
 			throw new IllegalArgumentException("Unable to parse: " + symbol);
 		}
 		
